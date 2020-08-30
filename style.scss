@@ -2,7 +2,7 @@
 $black: #000000;
 $off-white: #edf0f1;
 $bright-blue: #00DDFA;
-$bright-green: #6AFF83;
+$bright-green: #3DFF5E;
 $dark-blue: #05668D;
 $dark-green: #6AB59C;
 
@@ -41,6 +41,10 @@ header {
             }
         }
     }
+}
+
+#home-banner-heading {
+    color: $bright-green
 }
 
 body {

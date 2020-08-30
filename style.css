@@ -27,6 +27,9 @@ header {
       .nav-links li a:hover {
         color: #00DDFA; }
 
+#home-banner-heading {
+  color: #3DFF5E; }
+
 body {
   background-color: gray; }
 

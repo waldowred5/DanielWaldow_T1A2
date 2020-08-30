@@ -1,6 +1,23 @@
+// Colour Palette
+$black: #000000;
+$bright-blue: #00DDFA;
+$bright-green: #6AFF83;
+$dark-blue: #05668D;
+$dark-green: #6AB59C;
+
 * {
     padding: 0px;
     margin: 0px;
+}
+
+nav {
+    padding: 10px;
+    background-color: $dark-blue;
+    a {
+        display: flex;
+        flex-flow: row wrap;
+        text-align: center;
+    }
 }
 
 body {
@@ -8,7 +25,7 @@ body {
 }
 
 .home-banner {
-    background-color: black;
+    background-color: $black;
 }
 
 h1 {

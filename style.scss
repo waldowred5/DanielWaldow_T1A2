@@ -1,22 +1,45 @@
 // Colour Palette
 $black: #000000;
+$off-white: #edf0f1;
 $bright-blue: #00DDFA;
 $bright-green: #6AFF83;
 $dark-blue: #05668D;
 $dark-green: #6AB59C;
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 * {
+    box-sizing: border-box;
     padding: 0px;
     margin: 0px;
+    font-family: "Roboto", sans-serif;
 }
 
-nav {
-    padding: 10px;
-    background-color: $dark-blue;
-    a {
-        display: flex;
-        flex-flow: row wrap;
-        text-align: center;
+li, a {
+    font-weight: 500;
+    font-size: 16px;
+    color: $off-white;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding: 30px 10%;
+}
+
+.nav-links {
+    list-style: none;
+    li {
+        display: inline-block;
+        padding: 0px 5px;
+        a {
+            transition: all 0.3s ease 0s;
+            &:hover {
+                color: $bright-blue;
+            }
+        }
     }
 }
 
@@ -33,5 +56,6 @@ h1 {
 }
 
 h2 {
-    color: white;
+    color: $off-white;
+    font-size: 1em;
 }

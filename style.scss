@@ -15,6 +15,7 @@ $dark-green: #6AB59C;
     font-family: "Roboto", sans-serif;
 }
 
+// Convert this to mixin
 li, a {
     font-weight: 500;
     font-size: 16px;
@@ -24,9 +25,23 @@ li, a {
 
 header {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: center;
-    padding: 30px 10%;
+    padding: 10% 5%;
+}
+
+#logo {
+    height: 16px;
+    margin-bottom: 16px;
+}
+
+#nav-spacer {
+    height: 0px;
+    width: 51.69px;
+}
+
+nav {
+    max-width: 100vw;
 }
 
 .nav-links {
@@ -44,7 +59,19 @@ header {
 }
 
 #home-banner-heading {
-    color: $bright-green
+    color: $bright-green;
+    text-align: right;
+    padding: 1px 5%;
+}
+
+.home-image-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    img {
+        max-width: 90vw;
+
+    }
 }
 
 body {
@@ -53,6 +80,16 @@ body {
 
 .home-banner {
     background-color: $black;
+}
+
+.hr-container {
+    display: flex;
+    justify-content: flex-end;
+    hr {
+        width: 80%;
+        margin: 5px 5% 10px;
+        border: 1px solid $bright-green;
+    }
 }
 
 h1 {

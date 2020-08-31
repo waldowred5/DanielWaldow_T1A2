@@ -13,9 +13,20 @@ li, a {
 
 header {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: center;
-  padding: 30px 10%; }
+  padding: 10% 5%; }
+
+#logo {
+  height: 16px;
+  margin-bottom: 16px; }
+
+#nav-spacer {
+  height: 0px;
+  width: 51.69px; }
+
+nav {
+  max-width: 100vw; }
 
 .nav-links {
   list-style: none; }
@@ -28,13 +39,30 @@ header {
         color: #00DDFA; }
 
 #home-banner-heading {
-  color: #3DFF5E; }
+  color: #3DFF5E;
+  text-align: right;
+  padding: 1px 5%; }
+
+.home-image-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+  .home-image-nav img {
+    max-width: 90vw; }
 
 body {
   background-color: gray; }
 
 .home-banner {
   background-color: #000000; }
+
+.hr-container {
+  display: flex;
+  justify-content: flex-end; }
+  .hr-container hr {
+    width: 80%;
+    margin: 5px 5% 10px;
+    border: 1px solid #3DFF5E; }
 
 h1 {
   color: white; }

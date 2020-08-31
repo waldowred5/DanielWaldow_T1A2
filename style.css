@@ -99,6 +99,9 @@ h2 {
     margin-left: 5%;
     padding-top: 12px; }
 
+.blog-tiles {
+  background-image: linear-gradient(#000000, #000000, #215A71); }
+
 footer {
   background-color: #215A71;
   display: flex;

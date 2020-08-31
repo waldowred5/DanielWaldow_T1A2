@@ -151,6 +151,10 @@ h2 {
     }
 }
 
+.blog-tiles {
+    @include background-fade();
+}
+
 
 footer {
     background-color: $dark-blue;

@@ -40,15 +40,23 @@ nav {
         color: #3DFF5E; }
 
 #home-banner-heading {
-  color: #00DDFA;
+  color: #6AB59C;
   text-align: right;
   padding: 1px 5%; }
+
+#hr-container-home-title {
+  display: flex;
+  justify-content: flex-end; }
+  #hr-container-home-title hr {
+    width: 80%;
+    margin: 5px 5% 50px;
+    border: 1px solid #3DFF5E; }
 
 .home-image-nav {
   display: flex;
   flex-flow: wrap column;
   align-items: center;
-  background-image: linear-gradient(#000000, #215A71); }
+  background-image: linear-gradient(#000000, #000000, #215A71); }
   .home-image-nav img {
     max-width: 90vw;
     padding-top: 12px; }
@@ -59,16 +67,37 @@ nav {
 .home-banner {
   background-color: #000000; }
 
-#hr-container-home-title {
-  display: flex;
-  justify-content: flex-end; }
-  #hr-container-home-title hr {
-    width: 80%;
-    margin: 5px 5% 50px;
-    border: 1px solid #edf0f1; }
-
 h2 {
   font-size: 1em; }
+
+.main-heading {
+  background-color: #000000; }
+  .main-heading h1 {
+    color: #6AB59C;
+    text-align: right;
+    padding: 24px 5% 1px; }
+  .main-heading #hr-container-main-heading {
+    display: flex;
+    justify-content: flex-end; }
+    .main-heading #hr-container-main-heading hr {
+      width: 80%;
+      margin: 5px 5%;
+      border: 1px solid #3DFF5E; }
+
+.projects {
+  background-image: linear-gradient(#000000, #000000, #215A71); }
+  .projects a {
+    display: flex;
+    flex-flow: wrap column;
+    align-items: center; }
+    .projects a img {
+      max-width: 90vw;
+      padding-top: 12px; }
+    .projects a h3 {
+      margin-top: 36px; }
+  .projects p {
+    margin-left: 5%;
+    padding-top: 12px; }
 
 footer {
   background-color: #215A71;

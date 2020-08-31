@@ -15,6 +15,15 @@ $dark-green: #6AB59C;
     text-decoration: none;    
 }
 
+@mixin background-fade {
+    background-image: linear-gradient($black, $black, $dark-blue);
+}
+
+@mixin img-mobile-view {
+    max-width: 90vw;
+    padding-top: 12px;
+}
+
 * {
     box-sizing: border-box;
     padding: 0px;
@@ -68,19 +77,28 @@ nav {
 }
 
 #home-banner-heading {
-    color: $bright-blue;
+    color: $dark-green;
     text-align: right;
     padding: 1px 5%;
+}
+
+#hr-container-home-title {
+    display: flex;
+    justify-content: flex-end;
+    hr {
+        width: 80%;
+        margin: 5px 5% 50px;
+        border: 1px solid $bright-green;
+    }
 }
 
 .home-image-nav {
     display: flex;
     flex-flow: wrap column;
     align-items: center;
-    background-image: linear-gradient($black, $dark-blue);
+    @include background-fade();
     img {
-        max-width: 90vw;
-        padding-top: 12px;
+        @include img-mobile-view();
     }
     h3 {
         padding-top: 24px;
@@ -92,19 +110,47 @@ nav {
     background-color: $black;
 }
 
-#hr-container-home-title {
-    display: flex;
-    justify-content: flex-end;
-    hr {
-        width: 80%;
-        margin: 5px 5% 50px;
-        border: 1px solid $off-white;
-    }
-}
-
 h2 {
     font-size: 1em;
 }
+
+.main-heading {
+    background-color: $black;
+    h1 {
+        color: $dark-green;
+        text-align: right;
+        padding: 24px 5% 1px;
+    }    
+    #hr-container-main-heading {
+        display: flex;
+        justify-content: flex-end;
+        hr {
+            width: 80%;
+            margin: 5px 5%;
+            border: 1px solid $bright-green;
+        } 
+    }
+}
+
+.projects {
+    @include background-fade();
+    a {
+        display: flex;
+        flex-flow: wrap column;
+        align-items: center;
+        img {
+            @include img-mobile-view();
+        }
+        h3 {
+            margin-top: 36px;
+        }
+    }
+    p {
+        margin-left: 5%;
+        padding-top: 12px;
+    }
+}
+
 
 footer {
     background-color: $dark-blue;

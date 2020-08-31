@@ -1,12 +1,19 @@
-// Colour Palette
+// Colour Palette - https://coolors.co/000000-05668d-6ab59c-6aff83-00ddfa
 $black: #000000;
 $off-white: #edf0f1;
 $bright-blue: #00DDFA;
 $bright-green: #3DFF5E;
-$dark-blue: #05668D;
+$dark-blue: #215A71;
 $dark-green: #6AB59C;
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@mixin standard-text {
+    font-weight: 500;
+    font-size: 1em;
+    color: $off-white;
+    text-decoration: none;    
+}
 
 * {
     box-sizing: border-box;
@@ -16,23 +23,25 @@ $dark-green: #6AB59C;
 }
 
 // Convert this to mixin
-li, a {
+li, a, p, h1, h2, h3 {
     font-weight: 500;
-    font-size: 16px;
+    font-size: 1em;
     color: $off-white;
     text-decoration: none;
 }
 
 header {
+    background-color: $dark-blue;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 10% 5%;
+    flex-flow: wrap column;
+    align-items: center;
+    padding: 24px 12px;
 }
 
 #logo {
     height: 16px;
     margin-bottom: 16px;
+    
 }
 
 #nav-spacer {
@@ -46,57 +55,74 @@ nav {
 
 .nav-links {
     list-style: none;
+    display: flex;
     li {
-        display: inline-block;
         padding: 0px 5px;
         a {
             transition: all 0.3s ease 0s;
             &:hover {
-                color: $bright-blue;
+                color: $bright-green;
             }
         }
     }
 }
 
 #home-banner-heading {
-    color: $bright-green;
+    color: $bright-blue;
     text-align: right;
     padding: 1px 5%;
 }
 
 .home-image-nav {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-flow: wrap column;
+    align-items: center;
+    background-image: linear-gradient($black, $dark-blue);
     img {
         max-width: 90vw;
-
+        padding-top: 12px;
     }
-}
-
-body {
-    background-color: gray;
+    h3 {
+        padding-top: 24px;
+        color: $off-white;
+    }
 }
 
 .home-banner {
     background-color: $black;
 }
 
-.hr-container {
+#hr-container-home-title {
     display: flex;
     justify-content: flex-end;
     hr {
         width: 80%;
-        margin: 5px 5% 10px;
-        border: 1px solid $bright-green;
+        margin: 5px 5% 50px;
+        border: 1px solid $off-white;
     }
 }
 
-h1 {
-    color: white;
+h2 {
+    font-size: 1em;
 }
 
-h2 {
-    color: $off-white;
-    font-size: 1em;
+footer {
+    background-color: $dark-blue;
+    display: flex;
+    flex-flow: wrap column;
+    align-items: center;
+    .footer-socials {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        list-style: none;
+        padding: 32px;
+        li {
+            padding: 0px 15px;
+            font-size: 24px;
+        }
+    }
+    p {
+            padding-bottom: 32px;
+        }
 }

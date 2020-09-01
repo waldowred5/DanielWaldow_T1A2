@@ -5,12 +5,9 @@
   margin: 0px;
   font-family: "Roboto", sans-serif; }
 
-h2 {
-  font-size: 1em; }
-
 li, a, p, h1, h2, h3 {
   font-weight: 500;
-  font-size: 1em;
+  font-size: auto;
   color: #edf0f1;
   text-decoration: none; }
 
@@ -165,8 +162,28 @@ nav {
     .contact-content #contact-headshot img {
       max-width: 90vw;
       padding-top: 12px; }
-  .contact-content #employment-highlights ul {
-    margin-left: 10%; }
+  .contact-content #about-me-paragraph {
+    padding-bottom: 24px;
+    text-align: center; }
+  .contact-content #employment-items-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 24px; }
+    .contact-content #employment-items-container #employment-highlights ul {
+      margin-left: 10%;
+      min-width: 50%; }
+    .contact-content #employment-items-container #cv-link {
+      padding-left: 12px; }
+      .contact-content #employment-items-container #cv-link a img {
+        max-width: 100px;
+        fill: #edf0f1; }
+  .contact-content address ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 6px;
+    list-style: none; }
 
 footer {
   background-color: #215A71;

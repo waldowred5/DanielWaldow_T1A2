@@ -8,9 +8,9 @@ $dark-green: #6AB59C;
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-@mixin standard-text {
+@mixin default-text {
     font-weight: 500;
-    font-size: 1em;
+    font-size: auto;
     color: $off-white;
     text-decoration: none;    
 }
@@ -38,16 +38,8 @@ $dark-green: #6AB59C;
     font-family: "Roboto", sans-serif;
 }
 
-h2 {
-    font-size: 1em;
-}
-
-// Convert this to mixin
 li, a, p, h1, h2, h3 {
-    font-weight: 500;
-    font-size: 1em;
-    color: $off-white;
-    text-decoration: none;
+    @include default-text()
 }
 
 //Header
@@ -232,14 +224,41 @@ nav {
         }
     }
     #about-me-paragraph {
-
+        padding-bottom: 24px;
+        text-align: center;
     }
-    #employment-highlights {
-        ul {
-            margin-left: 10%;
+    #employment-items-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding-bottom: 24px;
+        #employment-highlights {
+            ul {
+                margin-left: 10%;
+                min-width: 50%;
+            }
+        }
+        #cv-link {
+            padding-left: 12px;
+            a {
+                img {                           
+                    max-width: 100px;
+                    fill: $off-white;
+                }
+            }    
         }
     }
+    address {
+        ul {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 6px;
+            list-style: none;
+        }
+    }         
 }
+
 
 //Footer
 footer {

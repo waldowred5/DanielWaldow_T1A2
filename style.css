@@ -93,6 +93,9 @@ nav {
     .projects a img {
       max-width: 90vw;
       padding-top: 12px; }
+    .projects a h3 {
+      align-self: flex-start;
+      margin: 0% 5%; }
   .projects p {
     margin: 0% 5%;
     padding-bottom: 36px;
@@ -107,33 +110,44 @@ nav {
     margin: 0% 5%; }
     .blog-tiles div .pages-blog-title {
       margin: 0%;
-      display: flex; }
+      display: flex;
+      padding: 5px 0px; }
     .blog-tiles div .pages-blog-image {
       margin: 0%;
-      display: flex; }
+      display: flex;
+      padding: 5px 0px; }
     .blog-tiles div .pages-blog-text-link {
       margin: 0%;
       display: flex;
+      padding: 5px 0px;
       flex-direction: column;
       align-items: flex-start; }
+      .blog-tiles div .pages-blog-text-link p {
+        padding: 5px 0px; }
+      .blog-tiles div .pages-blog-text-link a {
+        padding: 5px 0px; }
     .blog-tiles div .pages-blog-date-left {
       margin: 0%;
       display: flex;
+      padding: 5px 0px;
       flex-direction: column;
       align-self: flex-end; }
     .blog-tiles div .pages-blog-date-right {
       margin: 0%;
       display: flex;
+      padding: 5px 0px;
       flex-direction: column;
       align-self: flex-start; }
   .blog-tiles .blog-left {
     margin: 0%;
     display: flex;
+    padding: 5px 0px;
     flex-flow: column;
     align-items: flex-start; }
   .blog-tiles .blog-right {
     margin: 0%;
     display: flex;
+    padding: 5px 0px;
     flex-flow: column;
     align-items: flex-end; }
 

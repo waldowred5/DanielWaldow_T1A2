@@ -24,9 +24,10 @@ $dark-green: #6AB59C;
     padding-top: 12px;
 }
 
-@mixin flex-nomargin {
+@mixin flex-nomargin-top-bottom-padding {
     margin: 0%;
     display: flex;
+    padding: 5px 0px;
 }
 
 //Global
@@ -152,6 +153,10 @@ nav {
         img {
             @include img-mobile-view();
         }
+        h3 {
+            align-self: flex-start;
+            margin: 0% 5%;
+        }
     }
     p {
         margin: 0% 5%;
@@ -169,35 +174,41 @@ nav {
     div {
         margin: 0% 5%;
         .pages-blog-title {
-            @include flex-nomargin();
+            @include flex-nomargin-top-bottom-padding();
         }
         .pages-blog-image {
-            @include flex-nomargin();
+            @include flex-nomargin-top-bottom-padding();
         }
         .pages-blog-text-link {
-            @include flex-nomargin();
+            @include flex-nomargin-top-bottom-padding();
             flex-direction: column;
             align-items: flex-start;
+            p {
+                padding: 5px 0px;
+            }
+            a {
+                padding: 5px 0px;
+            }
         }
         .pages-blog-date-left {
-            @include flex-nomargin();
+            @include flex-nomargin-top-bottom-padding();
             flex-direction: column;
             align-self: flex-end;
         }
         .pages-blog-date-right {
-            @include flex-nomargin();
+            @include flex-nomargin-top-bottom-padding();
             flex-direction: column;
             align-self: flex-start;
         } 
     }
     .blog-left {
-        @include flex-nomargin();
+        @include flex-nomargin-top-bottom-padding();
         flex-flow: column;
         align-items: flex-start;
         
     }
     .blog-right {
-        @include flex-nomargin();
+        @include flex-nomargin-top-bottom-padding();
         flex-flow: column;
         align-items: flex-end;
     }

@@ -139,7 +139,7 @@ nav {
     }
 }
 
-//Projects Body
+//Projects Mainpage Body
 .projects {
     @include background-fade();
     a {
@@ -160,6 +160,37 @@ nav {
         padding-top: 12px;
     }
 }
+
+//Projects Individual Pages 
+.project-items-container {
+    @include background-fade();
+    .project-content {
+        display: flex;
+        flex-flow: wrap column;
+        align-items: center;
+        img {
+            @include img-mobile-view();
+        }
+        p, a {
+            margin: 0% 5%;
+        }
+    }
+    .project-page-shortcut {
+        padding-top: 24px;
+        display: flex;
+        flex-flow: wrap row;
+        justify-content: space-between;
+        a {
+            margin-left: 5%;
+            align-items: flex-end;
+            img {
+                max-width: 45vw;
+                margin-right: 5%;
+            }
+        }
+    }
+}
+    
 
 //Blog Mainpage Body
 .blog-tiles {

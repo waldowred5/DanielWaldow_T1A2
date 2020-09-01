@@ -39,6 +39,7 @@ $dark-green: #6AB59C;
 
 h2 {
     font-size: 1em;
+}
 
 // Convert this to mixin
 li, a, p, h1, h2, h3 {
@@ -89,6 +90,7 @@ nav {
 //Homepage Banner - refactor this
 .home-banner {
     background-color: $black;
+}
 
 #home-banner-heading {
     color: $dark-green;
@@ -172,17 +174,30 @@ nav {
         .pages-blog-image {
             @include flex-nomargin();
         }
-        .pages-blog-date-text-link {
+        .pages-blog-text-link {
             @include flex-nomargin();
+            flex-direction: column;
+            align-items: flex-start;
         }
+        .pages-blog-date-left {
+            @include flex-nomargin();
+            flex-direction: column;
+            align-self: flex-end;
+        }
+        .pages-blog-date-right {
+            @include flex-nomargin();
+            flex-direction: column;
+            align-self: flex-start;
+        } 
     }
     .blog-left {
-        display: flex;
+        @include flex-nomargin();
         flex-flow: column;
         align-items: flex-start;
+        
     }
     .blog-right {
-        display: flex;
+        @include flex-nomargin();
         flex-flow: column;
         align-items: flex-end;
     }
@@ -206,6 +221,6 @@ footer {
         }
     }
     p {
-            padding-bottom: 32px;
-        }
+        padding-bottom: 32px;
+    }
 }

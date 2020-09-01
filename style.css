@@ -5,6 +5,9 @@
   margin: 0px;
   font-family: "Roboto", sans-serif; }
 
+h2 {
+  font-size: 1em; }
+
 li, a, p, h1, h2, h3 {
   font-weight: 500;
   font-size: 1em;
@@ -39,6 +42,9 @@ nav {
       .nav-links li a:hover {
         color: #3DFF5E; }
 
+.home-banner {
+  background-color: #000000; }
+
 #home-banner-heading {
   color: #6AB59C;
   text-align: right;
@@ -63,12 +69,6 @@ nav {
   .home-image-nav h3 {
     padding-top: 24px;
     color: #edf0f1; }
-
-.home-banner {
-  background-color: #000000; }
-
-h2 {
-  font-size: 1em; }
 
 .main-heading {
   background-color: #000000; }
@@ -105,19 +105,34 @@ h2 {
   align-items: center; }
   .blog-tiles div {
     margin: 0% 5%; }
-    .blog-tiles div .date {
-      display: inline-block;
-      text-align: right; }
-    .blog-tiles div .blog-title-date {
+    .blog-tiles div .pages-blog-title {
+      margin: 0%;
+      display: flex; }
+    .blog-tiles div .pages-blog-image {
+      margin: 0%;
+      display: flex; }
+    .blog-tiles div .pages-blog-text-link {
       margin: 0%;
       display: flex;
-      flex-flow: row wrap;
-      justify-content: space-between; }
+      flex-direction: column;
+      align-items: flex-start; }
+    .blog-tiles div .pages-blog-date-left {
+      margin: 0%;
+      display: flex;
+      flex-direction: column;
+      align-self: flex-end; }
+    .blog-tiles div .pages-blog-date-right {
+      margin: 0%;
+      display: flex;
+      flex-direction: column;
+      align-self: flex-start; }
   .blog-tiles .blog-left {
+    margin: 0%;
     display: flex;
     flex-flow: column;
     align-items: flex-start; }
   .blog-tiles .blog-right {
+    margin: 0%;
     display: flex;
     flex-flow: column;
     align-items: flex-end; }

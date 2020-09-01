@@ -81,7 +81,7 @@ h2 {
     justify-content: flex-end; }
     .main-heading #hr-container-main-heading hr {
       width: 80%;
-      margin: 5px 5%;
+      margin: 5px 5% 36px;
       border: 1px solid #3DFF5E; }
 
 .projects {
@@ -93,14 +93,34 @@ h2 {
     .projects a img {
       max-width: 90vw;
       padding-top: 12px; }
-    .projects a h3 {
-      margin-top: 36px; }
   .projects p {
-    margin-left: 5%;
+    margin: 0% 5%;
+    padding-bottom: 36px;
     padding-top: 12px; }
 
 .blog-tiles {
-  background-image: linear-gradient(#000000, #000000, #215A71); }
+  background-image: linear-gradient(#000000, #000000, #215A71);
+  display: flex;
+  flex-flow: wrap column;
+  align-items: center; }
+  .blog-tiles div {
+    margin: 0% 5%; }
+    .blog-tiles div .date {
+      display: inline-block;
+      text-align: right; }
+    .blog-tiles div .blog-title-date {
+      margin: 0%;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between; }
+  .blog-tiles .blog-left {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start; }
+  .blog-tiles .blog-right {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-end; }
 
 footer {
   background-color: #215A71;

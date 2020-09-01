@@ -110,18 +110,25 @@ nav {
     .project-items-container .project-content img {
       max-width: 90vw;
       padding-top: 12px; }
-    .project-items-container .project-content p, .project-items-container .project-content a {
-      margin: 0% 5%; }
+    .project-items-container .project-content p {
+      margin: 0% 5%;
+      padding-top: 12px; }
+    .project-items-container .project-content a {
+      margin: 0% 5%;
+      padding: 12px 0px 24px;
+      align-self: flex-start; }
   .project-items-container .project-page-shortcut {
     padding-top: 24px;
+    margin: 0% 5%;
     display: flex;
     flex-flow: wrap row;
-    justify-content: space-between; }
+    justify-content: flex-end; }
     .project-items-container .project-page-shortcut a {
-      margin-left: 5%; }
-      .project-items-container .project-page-shortcut a img {
-        max-width: 45vw;
-        margin-right: 5%; }
+      align-self: flex-end; }
+    .project-items-container .project-page-shortcut img {
+      max-width: 45vw; }
+  .project-items-container #other-project-link {
+    padding-right: 3%; }
 
 .blog-tiles {
   background-image: linear-gradient(#000000, #000000, #215A71);

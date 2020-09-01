@@ -171,23 +171,32 @@ nav {
         img {
             @include img-mobile-view();
         }
-        p, a {
+        p {
             margin: 0% 5%;
+            padding-top: 12px;
+        }
+        a {
+            margin: 0% 5%;
+            padding: 12px 0px 24px;
+            align-self: flex-start;
         }
     }
     .project-page-shortcut {
         padding-top: 24px;
+        margin: 0% 5%;
         display: flex;
         flex-flow: wrap row;
-        justify-content: space-between;
+        justify-content: flex-end;
         a {
-            margin-left: 5%;
-            align-items: flex-end;
+            align-self: flex-end;
+        }
             img {
                 max-width: 45vw;
-                margin-right: 5%;
             }
         }
+        #other-project-link {
+            padding-right: 3%;
+            //word-wrap: normal; <-- try this later
     }
 }
     

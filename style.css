@@ -42,6 +42,9 @@ nav {
       .nav-links li a:hover {
         color: #3DFF5E; }
 
+#flaticon-promo {
+  display: none; }
+
 .home-banner {
   background-color: #000000; }
 
@@ -142,14 +145,28 @@ nav {
     margin: 0%;
     display: flex;
     padding: 5px 0px;
-    flex-flow: column;
+    flex-direction: column;
     align-items: flex-start; }
   .blog-tiles .blog-right {
     margin: 0%;
     display: flex;
     padding: 5px 0px;
-    flex-flow: column;
+    flex-direction: column;
     align-items: flex-end; }
+
+.contact-content {
+  background-image: linear-gradient(#000000, #000000, #215A71);
+  display: flex;
+  flex-flow: wrap column;
+  padding: 0% 5%; }
+  .contact-content #contact-headshot {
+    align-self: center;
+    padding-bottom: 36px; }
+    .contact-content #contact-headshot img {
+      max-width: 90vw;
+      padding-top: 12px; }
+  .contact-content #employment-highlights ul {
+    margin-left: 10%; }
 
 footer {
   background-color: #215A71;

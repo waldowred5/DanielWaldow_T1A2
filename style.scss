@@ -88,6 +88,10 @@ nav {
     }
 }
 
+#flaticon-promo {
+    display: none;
+}
+
 //Homepage Banner - refactor this
 .home-banner {
     background-color: $black;
@@ -203,14 +207,37 @@ nav {
     }
     .blog-left {
         @include flex-nomargin-top-bottom-padding();
-        flex-flow: column;
+        flex-direction: column;
         align-items: flex-start;
         
     }
     .blog-right {
         @include flex-nomargin-top-bottom-padding();
-        flex-flow: column;
+        flex-direction: column;
         align-items: flex-end;
+    }
+}
+
+//Contact Mainpage Body
+.contact-content {
+    @include background-fade();
+    display: flex;
+    flex-flow: wrap column;
+    padding: 0% 5%;    
+    #contact-headshot {        
+        align-self: center;        
+        padding-bottom: 36px;
+        img {
+            @include img-mobile-view();
+        }
+    }
+    #about-me-paragraph {
+
+    }
+    #employment-highlights {
+        ul {
+            margin-left: 10%;
+        }
     }
 }
 

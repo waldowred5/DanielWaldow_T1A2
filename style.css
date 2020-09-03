@@ -14,8 +14,8 @@ li, a, p, h1, h2, h3 {
 h2 {
   font-size: 1em; }
 
-html {
-  background-image: #000000; }
+body {
+  background-color: #000000; }
 
 header {
   background-color: #215A71;

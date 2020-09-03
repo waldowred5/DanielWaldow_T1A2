@@ -46,6 +46,10 @@ h2 {
     font-size: 1em;
 }
 
+html {
+    background-image: $black;
+}
+
 //Header
 header {
     background-color: $dark-blue;
@@ -255,11 +259,7 @@ nav {
 }
 
 //Blog Individual Pages
-.blog-content {
-    @include background-fade()
-}
-
-.blog-nav-buttons {
+.blog-items-container {
     @include background-fade()
 }
 

@@ -14,6 +14,9 @@ li, a, p, h1, h2, h3 {
 h2 {
   font-size: 1em; }
 
+html {
+  background-image: #000000; }
+
 header {
   background-color: #215A71;
   display: flex;
@@ -183,10 +186,7 @@ nav {
     flex-direction: column;
     align-items: flex-end; }
 
-.blog-content {
-  background-image: linear-gradient(#000000, #000000, #215A71); }
-
-.blog-nav-buttons {
+.blog-items-container {
   background-image: linear-gradient(#000000, #000000, #215A71); }
 
 .contact-content {

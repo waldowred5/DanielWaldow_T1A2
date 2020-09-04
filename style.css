@@ -10,7 +10,7 @@
 li, a, p, h1, h2, h3 {
   font-weight: 500;
   font-size: auto;
-  color: #edf0f1;
+  color: purple;
   text-decoration: none;
 }
 
@@ -107,7 +107,7 @@ nav {
 }
 
 #home-banner-heading {
-  color: #edf0f1;
+  color: purple;
   text-align: right;
   padding: 1px 5%;
 }
@@ -156,7 +156,7 @@ nav {
 }
 
 .main-heading h1 {
-  color: #edf0f1;
+  color: purple;
   text-align: right;
   padding: 24px 5% 1px;
 }
@@ -216,7 +216,7 @@ nav {
   background-image: linear-gradient(#000000, #000000, #215A71);
 }
 
-.project-items-container .project-content {
+.project-items-container .projects-project-image-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -229,9 +229,22 @@ nav {
           align-items: center;
 }
 
-.project-items-container .project-content img {
+.project-items-container .projects-project-image-container img {
   max-width: 90vw;
   padding-top: 12px;
+}
+
+.project-items-container .project-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: wrap column;
+          flex-flow: wrap column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .project-items-container .project-content p {
@@ -240,7 +253,7 @@ nav {
 }
 
 .project-items-container .project-content a {
-  margin: 0%;
+  margin: 0% 5%;
   padding: 12px 0px 24px;
   -ms-flex-item-align: start;
       align-self: flex-start;
@@ -266,11 +279,11 @@ nav {
       align-self: flex-end;
 }
 
-.project-items-container .project-page-shortcut img {
+.project-items-container .project-page-shortcut a img {
   max-width: 45vw;
 }
 
-.project-items-container #other-project-link {
+.project-items-container .project-page-shortcut #other-project-link {
   padding-right: 3%;
 }
 

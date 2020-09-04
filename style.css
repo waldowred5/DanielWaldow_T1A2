@@ -632,7 +632,7 @@ footer p {
   padding-bottom: 32px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
   #home-banner-heading1 {
     font-size: 2em;
   }
@@ -692,14 +692,14 @@ footer p {
   .projects #projects-drumming {
     padding-top: 12px;
   }
-  /* .pages-blog-image {
-        max-width: 20%;
-        a {
-            max-width: 20%;
-            img {
-                max-width: 20%;
-            }
-        }
-    } */
+  .pages-blog-image {
+    /* max-width: 70%; */
+  }
+  .pages-blog-image a {
+    width: 70%;
+  }
+  .pages-blog-image a img {
+    /* width: 70%; */
+  }
 }
 /*# sourceMappingURL=style.css.map */

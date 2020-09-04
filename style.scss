@@ -454,7 +454,7 @@ footer {
 }
 
 //Media Queries
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
     //Homepage Banner Headings
     #home-banner-heading1 {
         font-size: 2em;
@@ -521,13 +521,13 @@ footer {
     }
 
     //Blog Mainpage Tile
-    /* .pages-blog-image {
-        max-width: 20%;
+        .pages-blog-image {
+        /* max-width: 70%; */
         a {
-            max-width: 20%;
+            width: 70%;
             img {
-                max-width: 20%;
+                /* width: 70%; */
             }
         }
-    } */
+    } 
 }

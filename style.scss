@@ -332,7 +332,7 @@ nav {
 
 //Blog Individual Pages
 .blog-items-container {
-    //@include background-fade();
+    @include background-fade();
     section {
         display: flex;
         flex-flow: wrap column;

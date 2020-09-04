@@ -146,11 +146,15 @@ nav {
     .blog-tiles div .pages-blog-title {
       margin: 0%;
       display: flex;
-      padding: 5px 0px; }
+      padding: 5px 0px;
+      max-width: 90vw; }
     .blog-tiles div .pages-blog-image {
       margin: 0%;
       display: flex;
       padding: 5px 0px; }
+      .blog-tiles div .pages-blog-image a img {
+        max-width: 90vw;
+        padding-top: 12px; }
     .blog-tiles div .pages-blog-text-link {
       margin: 0%;
       display: flex;

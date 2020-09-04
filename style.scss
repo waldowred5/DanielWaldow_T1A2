@@ -221,9 +221,15 @@ nav {
         margin: 0% 5%;
         .pages-blog-title {
             @include flex-nomargin-top-bottom-padding();
+            max-width: 90vw;
         }
         .pages-blog-image {
             @include flex-nomargin-top-bottom-padding();
+            a {
+                img {
+                    @include img-mobile-view()        
+                }
+            }
         }
         .pages-blog-text-link {
             @include flex-nomargin-top-bottom-padding();

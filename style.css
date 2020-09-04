@@ -128,6 +128,11 @@ nav {
 }
 
 .home-image-nav {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#000000), color-stop(#000000), to(#215A71));
+  background-image: linear-gradient(#000000, #000000, #215A71);
+}
+
+.home-image-nav .home-image-nav-tile {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -138,16 +143,14 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#000000), color-stop(#000000), to(#215A71));
-  background-image: linear-gradient(#000000, #000000, #215A71);
 }
 
-.home-image-nav img {
+.home-image-nav .home-image-nav-tile img {
   max-width: 90vw;
   padding-top: 12px;
 }
 
-.home-image-nav h3 {
+.home-image-nav .home-image-nav-tile h3 {
   padding-top: 24px;
 }
 
@@ -627,5 +630,25 @@ footer .footer-socials li:hover a {
 footer p {
   font-size: 0.8em;
   padding-bottom: 32px;
+}
+
+@media screen and (min-width: 1024px) {
+  .home-image-nav {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#000000), color-stop(#000000), to(#215A71));
+    background-image: linear-gradient(#000000, #000000, #215A71);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: wrap row;
+            flex-flow: wrap row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .home-image-nav .home-image-nav-tile img {
+    max-width: 25vw;
+  }
 }
 /*# sourceMappingURL=style.css.map */

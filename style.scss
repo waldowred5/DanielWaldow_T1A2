@@ -137,16 +137,18 @@ nav {
 
 //Home Images Navigation
 .home-image-nav {
-    display: flex;
-    flex-flow: wrap column;
-    align-items: center;
     @include background-fade();
-    img {
-        @include img-mobile-view();
-    }
-    h3 {
-        padding-top: 24px;
-    }
+    .home-image-nav-tile {
+        display: flex;
+        flex-flow: wrap column;
+        align-items: center;
+        img {
+            @include img-mobile-view();
+        }
+        h3 {
+            padding-top: 24px;
+        }
+    }   
 }
 
 //Heading Banners for Non-Home Main Pages
@@ -451,8 +453,21 @@ footer {
     }
 }
 
-@media screen and (min-width: 480px) {
-    body {
-      background-color: lightgreen;
+//Media Queries
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1024px) {
+    //Home Image Nav
+    .home-image-nav {
+        @include background-fade();
+        display: flex;
+        flex-flow: wrap row;
+        justify-content: space-evenly;
+        .home-image-nav-tile {        
+            img {
+                max-width: 25vw;
+            }
+        }   
     }
-  }
+}

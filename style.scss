@@ -194,13 +194,18 @@ nav {
 //Projects Individual Pages 
 .project-items-container {
     @include background-fade();
-    .project-content {
+    .projects-project-image {
         display: flex;
         flex-flow: wrap column;
         align-items: center;
         img {
             @include img-mobile-view();
         }
+    }
+    .project-content {
+        display: flex;
+        flex-flow: wrap column;
+        align-items: flex-start;
         p {
             margin: 0% 5%;
             padding-top: 12px;

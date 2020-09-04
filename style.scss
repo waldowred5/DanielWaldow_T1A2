@@ -332,7 +332,24 @@ nav {
 
 //Blog Individual Pages
 .blog-items-container {
-    @include background-fade()
+    //@include background-fade();
+    section {
+        display: flex;
+        flex-flow: wrap column;
+        justify-content: flex-start;
+        .blog-post-image {
+            align-self: center;
+            img {
+                @include img-mobile-view();
+            }
+        }
+        .blog-post-date {
+            p {
+                color: $dark-green;
+                padding-top: 24px;
+            }
+        }
+    }
 }
 
 //Contact Mainpage Body

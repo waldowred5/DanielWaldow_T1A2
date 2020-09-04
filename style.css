@@ -267,17 +267,19 @@ nav {
           justify-content: flex-end;
 }
 
-.project-items-container .project-page-shortcut a {
+.project-items-container .project-page-shortcut div a {
   -ms-flex-item-align: end;
       align-self: flex-end;
 }
 
-.project-items-container .project-page-shortcut a img {
+.project-items-container .project-page-shortcut div a img {
   max-width: 45vw;
 }
 
-.project-items-container .project-page-shortcut #other-project-link {
+.project-items-container .project-page-shortcut #other-project-text-link {
   padding-right: 3%;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
 
 .blog-tiles {

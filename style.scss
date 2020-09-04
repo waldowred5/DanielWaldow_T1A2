@@ -218,15 +218,17 @@ nav {
         display: flex;
         flex-flow: wrap row;
         justify-content: flex-end;
-        a {
-            align-self: flex-end;
-            img {
-                max-width: 45vw;
+        div {
+            a {
+                align-self: flex-end;
+                img {
+                    max-width: 45vw;
+                }
             }
         }
-        #other-project-link {
+        #other-project-text-link {
             padding-right: 3%;
-            //word-wrap: normal; <-- try this later
+            align-self: flex-end;
         }
     }
 }  

@@ -462,6 +462,15 @@ footer {
     #home-banner-heading2 {
         font-size: 1.2em;
     }
+
+    //Blog Mainpage Tile
+    .pages-blog-image {
+        a {
+            img {
+                min-width: 90vw;
+            }
+        }
+    }
 }
 
 @media screen and (min-width: 1024px) {
@@ -486,6 +495,13 @@ footer {
         }   
     }
 
+    //Heading Banners for Non-Home Main Pages
+    #hr-container-main-heading {
+        hr {
+            max-width: 25%;
+        }        
+    }
+
     //Projects Mainpage Body
     .projects {
         display: flex;
@@ -493,8 +509,6 @@ footer {
         justify-content: space-evenly;
         div {
             max-width: 40vw;
-            .project-title {
-            }
             a {
                 img {
                     max-width: 40vw;
@@ -506,26 +520,14 @@ footer {
         }
     }
 
-
-    /* .projects {
-        @include background-fade();
-        padding: 0% 5%;
-        div {
-            padding-top: 36px;
-            @include flex-nomargin-top-bottom-padding();
-            flex-flow: wrap column;
-            align-items: flex-start;
-            a {
-                img {
-                    @include img-mobile-view();
-                }
+    //Blog Mainpage Tile
+    /* .pages-blog-image {
+        max-width: 20%;
+        a {
+            max-width: 20%;
+            img {
+                max-width: 20%;
             }
-            p {
-                padding-top: 12px;
-            }
-        }
-        #projects-drumming {
-            padding-top: 36px;
         }
     } */
 }

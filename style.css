@@ -123,7 +123,7 @@ nav {
 
 #hr-container-home-title hr {
   width: 70%;
-  margin: 5px 5% 50px;
+  margin: 5px 5% 20px;
   border: 1px solid #3DFF5E;
 }
 
@@ -450,7 +450,7 @@ nav {
   background-image: linear-gradient(#000000, #000000, #215A71);
 }
 
-.blog-items-container section {
+.blog-items-container .blog-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -463,19 +463,45 @@ nav {
           justify-content: flex-start;
 }
 
-.blog-items-container section .blog-post-image {
+.blog-items-container .blog-content div {
+  margin: 0% 5%;
+}
+
+.blog-items-container .blog-content .blog-post-image {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
 }
 
-.blog-items-container section .blog-post-image img {
+.blog-items-container .blog-content .blog-post-image img {
   max-width: 90vw;
   padding-top: 12px;
 }
 
-.blog-items-container section .blog-post-date p {
+.blog-items-container .blog-content .blog-post-date p {
   color: #6AB59C;
+  padding-top: 24px;
+}
+
+.blog-items-container .blog-content .blog-post-text .blog-text {
+  padding-top: 12px;
+}
+
+.blog-items-container .blog-nav-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: wrap row;
+          flex-flow: wrap row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: 0% 5%;
+}
+
+.blog-items-container .blog-nav-buttons a {
   padding-top: 24px;
 }
 

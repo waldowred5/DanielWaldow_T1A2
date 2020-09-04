@@ -130,7 +130,7 @@ nav {
     justify-content: flex-end;
     hr {
         width: 70%;
-        margin: 5px 5% 50px;
+        margin: 5px 5% 20px;
         border: 1px solid $bright-green;
     }
 }
@@ -333,10 +333,13 @@ nav {
 //Blog Individual Pages
 .blog-items-container {
     @include background-fade();
-    section {
+    .blog-content {
         display: flex;
         flex-flow: wrap column;
         justify-content: flex-start;
+        div {
+            margin: 0% 5%;
+        }
         .blog-post-image {
             align-self: center;
             img {
@@ -348,6 +351,20 @@ nav {
                 color: $dark-green;
                 padding-top: 24px;
             }
+        }
+        .blog-post-text {
+            .blog-text {
+                padding-top: 12px;
+            }
+        }
+    }
+    .blog-nav-buttons {
+        display: flex;
+        flex-flow: wrap row;
+        justify-content: space-evenly;
+        margin: 0% 5%;
+        a {
+            padding-top: 24px;
         }
     }
 }

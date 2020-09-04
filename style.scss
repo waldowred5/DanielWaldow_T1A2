@@ -166,7 +166,6 @@ nav {
     }
     p {
         margin: 0% 5%;
-        padding-bottom: 36px;
         padding-top: 12px;
     }
 }
@@ -218,7 +217,6 @@ nav {
     flex-flow: wrap column;
     align-items: center;
     div {
-        margin: 0% 5%;
         .pages-blog-title {
             @include flex-nomargin-top-bottom-padding();
             max-width: 90vw;
@@ -254,15 +252,18 @@ nav {
         } 
     }
     .blog-left {
-        @include flex-nomargin-top-bottom-padding();
+        margin: 0%;
+        display: flex;
         flex-direction: column;
         align-items: flex-start;
-        
+        padding: 0% 5%;
     }
     .blog-right {
-        @include flex-nomargin-top-bottom-padding();
+        margin: 0%;
+        display: flex;
         flex-direction: column;
         align-items: flex-end;
+        padding: 0% 5%;
     }
 }
 

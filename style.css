@@ -104,7 +104,6 @@ nav {
       margin: 0% 5%; }
   .projects p {
     margin: 0% 5%;
-    padding-bottom: 36px;
     padding-top: 12px; }
 
 .project-items-container {
@@ -141,54 +140,52 @@ nav {
   display: flex;
   flex-flow: wrap column;
   align-items: center; }
-  .blog-tiles div {
-    margin: 0% 5%; }
-    .blog-tiles div .pages-blog-title {
-      margin: 0%;
-      display: flex;
-      padding: 5px 0px;
-      max-width: 90vw; }
-    .blog-tiles div .pages-blog-image {
-      margin: 0%;
-      display: flex;
-      padding: 5px 0px; }
-      .blog-tiles div .pages-blog-image a img {
-        max-width: 90vw;
-        padding-top: 12px; }
-    .blog-tiles div .pages-blog-text-link {
-      margin: 0%;
-      display: flex;
-      padding: 5px 0px;
-      flex-direction: column;
-      align-items: flex-start; }
-      .blog-tiles div .pages-blog-text-link p {
-        padding: 5px 0px; }
-      .blog-tiles div .pages-blog-text-link a {
-        padding: 5px 0px; }
-    .blog-tiles div .pages-blog-date-left {
-      margin: 0%;
-      display: flex;
-      padding: 5px 0px;
-      flex-direction: column;
-      align-self: flex-end; }
-    .blog-tiles div .pages-blog-date-right {
-      margin: 0%;
-      display: flex;
-      padding: 5px 0px;
-      flex-direction: column;
-      align-self: flex-start; }
-  .blog-tiles .blog-left {
+  .blog-tiles div .pages-blog-title {
+    margin: 0%;
+    display: flex;
+    padding: 5px 0px;
+    max-width: 90vw; }
+  .blog-tiles div .pages-blog-image {
+    margin: 0%;
+    display: flex;
+    padding: 5px 0px; }
+    .blog-tiles div .pages-blog-image a img {
+      max-width: 90vw;
+      padding-top: 12px; }
+  .blog-tiles div .pages-blog-text-link {
     margin: 0%;
     display: flex;
     padding: 5px 0px;
     flex-direction: column;
     align-items: flex-start; }
-  .blog-tiles .blog-right {
+    .blog-tiles div .pages-blog-text-link p {
+      padding: 5px 0px; }
+    .blog-tiles div .pages-blog-text-link a {
+      padding: 5px 0px; }
+  .blog-tiles div .pages-blog-date-left {
     margin: 0%;
     display: flex;
     padding: 5px 0px;
     flex-direction: column;
-    align-items: flex-end; }
+    align-self: flex-end; }
+  .blog-tiles div .pages-blog-date-right {
+    margin: 0%;
+    display: flex;
+    padding: 5px 0px;
+    flex-direction: column;
+    align-self: flex-start; }
+  .blog-tiles .blog-left {
+    margin: 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0% 5%; }
+  .blog-tiles .blog-right {
+    margin: 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 0% 5%; }
 
 .blog-items-container {
   background-image: linear-gradient(#000000, #000000, #215A71); }

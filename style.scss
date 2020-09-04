@@ -207,8 +207,7 @@ nav {
             padding-right: 3%;
             //word-wrap: normal; <-- try this later
     }
-}
-    
+}  
 
 //Blog Mainpage Body
 .blog-tiles {
@@ -220,6 +219,7 @@ nav {
         .pages-blog-title {
             @include flex-nomargin-top-bottom-padding();
             max-width: 90vw;
+            padding-top: 36px;
         }
         .pages-blog-image {
             @include flex-nomargin-top-bottom-padding();
@@ -240,12 +240,12 @@ nav {
                 padding: 5px 0px;
             }
         }
-        .pages-blog-date-left {
+        .pages-blog-date-right {
             @include flex-nomargin-top-bottom-padding();
             flex-direction: column;
             align-self: flex-end;
         }
-        .pages-blog-date-right {
+        .pages-blog-date-left {
             @include flex-nomargin-top-bottom-padding();
             flex-direction: column;
             align-self: flex-start;
@@ -257,6 +257,22 @@ nav {
         flex-direction: column;
         align-items: flex-start;
         padding: 0% 5%;
+        .pages-blog-title {
+            a {
+                align-self: flex-start;
+            }
+        }
+        .pages-blog-text-link {
+            .blog-preview-text {
+                text-align: left;
+            }
+            a {
+                align-self: flex-start;
+                h3 {
+                    text-align: left;
+                }
+            }
+        }
     }
     .blog-right {
         margin: 0%;
@@ -264,6 +280,22 @@ nav {
         flex-direction: column;
         align-items: flex-end;
         padding: 0% 5%;
+        .pages-blog-title {
+            a {
+                align-self: flex-end;
+                h3 {
+                    text-align: right;
+                }
+            }
+        }
+        .pages-blog-text-link {
+            .blog-preview-text {
+                text-align: right;
+            }
+            a {
+                align-self: flex-end;
+            }
+        }
     }
 }
 

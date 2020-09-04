@@ -144,7 +144,8 @@ nav {
     margin: 0%;
     display: flex;
     padding: 5px 0px;
-    max-width: 90vw; }
+    max-width: 90vw;
+    padding-top: 36px; }
   .blog-tiles div .pages-blog-image {
     margin: 0%;
     display: flex;
@@ -162,13 +163,13 @@ nav {
       padding: 5px 0px; }
     .blog-tiles div .pages-blog-text-link a {
       padding: 5px 0px; }
-  .blog-tiles div .pages-blog-date-left {
+  .blog-tiles div .pages-blog-date-right {
     margin: 0%;
     display: flex;
     padding: 5px 0px;
     flex-direction: column;
     align-self: flex-end; }
-  .blog-tiles div .pages-blog-date-right {
+  .blog-tiles div .pages-blog-date-left {
     margin: 0%;
     display: flex;
     padding: 5px 0px;
@@ -180,12 +181,28 @@ nav {
     flex-direction: column;
     align-items: flex-start;
     padding: 0% 5%; }
+    .blog-tiles .blog-left .pages-blog-title a {
+      align-self: flex-start; }
+    .blog-tiles .blog-left .pages-blog-text-link .blog-preview-text {
+      text-align: left; }
+    .blog-tiles .blog-left .pages-blog-text-link a {
+      align-self: flex-start; }
+      .blog-tiles .blog-left .pages-blog-text-link a h3 {
+        text-align: left; }
   .blog-tiles .blog-right {
     margin: 0%;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     padding: 0% 5%; }
+    .blog-tiles .blog-right .pages-blog-title a {
+      align-self: flex-end; }
+      .blog-tiles .blog-right .pages-blog-title a h3 {
+        text-align: right; }
+    .blog-tiles .blog-right .pages-blog-text-link .blog-preview-text {
+      text-align: right; }
+    .blog-tiles .blog-right .pages-blog-text-link a {
+      align-self: flex-end; }
 
 .blog-items-container {
   background-image: linear-gradient(#000000, #000000, #215A71); }

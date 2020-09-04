@@ -6,8 +6,6 @@ $bright-green: #3DFF5E;
 $dark-blue: #215A71;
 $dark-green: #6AB59C;
 
-// off white #edf0f1
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 @mixin default-text {
@@ -42,6 +40,26 @@ $dark-green: #6AB59C;
 
 li, a, p, h1, h2, h3 {
     @include default-text()
+}
+
+a {
+    h3, p {
+        color: $bright-green;
+        transition: all 0.3s ease 0s;
+    }
+    img {
+        transition: all 0.3s ease 0s;
+    }
+    &:hover {
+        h3, p {
+            color: $bright-blue;
+            transform: scale(0.98);
+        }
+        img {
+            filter: grayscale(60%);
+            transform: scale(0.98);
+        }
+    }
 }
 
 h2 {
@@ -82,9 +100,11 @@ nav {
     li {
         padding: 0px 5px;
         a {
+            color: $bright-green;
             transition: all 0.3s ease 0s;
             &:hover {
-                color: $bright-green;
+                color: $bright-blue;
+                transform: scale(1.05);
             }
         }
     }
@@ -100,7 +120,7 @@ nav {
 }
 
 #home-banner-heading {
-    color: $dark-green;
+    color: $off-white;
     text-align: right;
     padding: 1px 5%;
 }
@@ -109,7 +129,7 @@ nav {
     display: flex;
     justify-content: flex-end;
     hr {
-        width: 80%;
+        width: 70%;
         margin: 5px 5% 50px;
         border: 1px solid $bright-green;
     }
@@ -126,7 +146,6 @@ nav {
     }
     h3 {
         padding-top: 24px;
-        color: $off-white;
     }
 }
 
@@ -134,7 +153,7 @@ nav {
 .main-heading {
     background-color: $black;
     h1 {
-        color: $dark-green;
+        color: $off-white;
         text-align: right;
         padding: 24px 5% 1px;
     }    
@@ -152,21 +171,23 @@ nav {
 //Projects Mainpage Body
 .projects {
     @include background-fade();
-    a {
-        display: flex;
+    padding: 0% 5%;
+    div {
+        padding-top: 36px;
+        @include flex-nomargin-top-bottom-padding();
         flex-flow: wrap column;
-        align-items: center;
-        img {
-            @include img-mobile-view();
+        align-items: flex-start;
+        a {
+            img {
+                @include img-mobile-view();
+            }
         }
-        h3 {
-            align-self: flex-start;
-            margin: 0% 5%;
+        p {
+            padding-top: 12px;
         }
     }
-    p {
-        margin: 0% 5%;
-        padding-top: 12px;
+    #projects-drumming {
+        padding-top: 36px;
     }
 }
 
@@ -244,11 +265,18 @@ nav {
             @include flex-nomargin-top-bottom-padding();
             flex-direction: column;
             align-self: flex-end;
+            .date {
+                color: $dark-green;
+            }
+            
         }
         .pages-blog-date-left {
             @include flex-nomargin-top-bottom-padding();
             flex-direction: column;
             align-self: flex-start;
+            .date {
+                color: $dark-green;
+            }
         } 
     }
     .blog-left {
@@ -337,7 +365,6 @@ nav {
             a {
                 img {                           
                     max-width: 100px;
-                    fill: $off-white;
                 }
             }    
         }
@@ -369,9 +396,20 @@ footer {
         li {
             padding: 0px 15px;
             font-size: 24px;
+            transition: all 0.3s ease 0s;
+            a {
+                color: $bright-green;                
+            }
+            &:hover {
+                transform: scale(1.2);
+                a {
+                    color: $bright-blue;
+                }
+            }
         }
     }
     p {
+        font-size: 0.8em;
         padding-bottom: 32px;
     }
 }

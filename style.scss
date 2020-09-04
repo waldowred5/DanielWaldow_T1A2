@@ -119,7 +119,7 @@ nav {
     background-color: $black;
 }
 
-#home-banner-heading {
+#home-banner-heading1, #home-banner-heading2 {
     color: $off-white;
     text-align: right;
     padding: 1px 5%;
@@ -129,7 +129,7 @@ nav {
     display: flex;
     justify-content: flex-end;
     hr {
-        width: 70%;
+        width: 100%;
         margin: 5px 5% 20px;
         border: 1px solid $bright-green;
     }
@@ -455,9 +455,24 @@ footer {
 
 //Media Queries
 @media screen and (min-width: 768px) {
+    //Homepage Banner Headings
+    #home-banner-heading1 {
+        font-size: 2em;
+    }
+    #home-banner-heading2 {
+        font-size: 1.2em;
+    }
 }
 
 @media screen and (min-width: 1024px) {
+    //Homepage Banner Headings
+    #home-banner-heading1 {
+        font-size: 2.8em;
+    }
+    #home-banner-heading2 {
+        font-size: 1.7em;
+    }
+    
     //Home Image Nav
     .home-image-nav {
         @include background-fade();

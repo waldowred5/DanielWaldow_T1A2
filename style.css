@@ -665,5 +665,47 @@ footer p {
   .home-image-nav .home-image-nav-tile img {
     max-width: 25vw;
   }
+  .projects {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: wrap row;
+            flex-flow: wrap row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .projects div {
+    max-width: 40vw;
+  }
+  .projects div a img {
+    max-width: 40vw;
+  }
+  .projects #projects-drumming {
+    padding-top: 12px;
+  }
+  /* .projects {
+        @include background-fade();
+        padding: 0% 5%;
+        div {
+            padding-top: 36px;
+            @include flex-nomargin-top-bottom-padding();
+            flex-flow: wrap column;
+            align-items: flex-start;
+            a {
+                img {
+                    @include img-mobile-view();
+                }
+            }
+            p {
+                padding-top: 12px;
+            }
+        }
+        #projects-drumming {
+            padding-top: 36px;
+        }
+    } */
 }
 /*# sourceMappingURL=style.css.map */

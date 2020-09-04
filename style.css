@@ -10,7 +10,7 @@
 li, a, p, h1, h2, h3 {
   font-weight: 500;
   font-size: auto;
-  color: purple;
+  color: #edf0f1;
   text-decoration: none;
 }
 
@@ -107,7 +107,7 @@ nav {
 }
 
 #home-banner-heading {
-  color: purple;
+  color: #edf0f1;
   text-align: right;
   padding: 1px 5%;
 }
@@ -156,7 +156,7 @@ nav {
 }
 
 .main-heading h1 {
-  color: purple;
+  color: #edf0f1;
   text-align: right;
   padding: 24px 5% 1px;
 }
@@ -247,16 +247,9 @@ nav {
           align-items: flex-start;
 }
 
-.project-items-container .project-content p {
+.project-items-container .project-content p, .project-items-container .project-content a {
   margin: 0% 5%;
   padding-top: 12px;
-}
-
-.project-items-container .project-content a {
-  margin: 0% 5%;
-  padding: 12px 0px 24px;
-  -ms-flex-item-align: start;
-      align-self: flex-start;
 }
 
 .project-items-container .project-page-shortcut {

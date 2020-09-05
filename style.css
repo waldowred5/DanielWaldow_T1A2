@@ -72,7 +72,7 @@ header {
 }
 
 nav {
-  max-width: 100vw;
+  max-width: 100%;
 }
 
 /* R2 (Text) Component 1 */
@@ -634,6 +634,23 @@ footer p {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+  header img {
+    max-width: 10%;
+  }
+  header nav .nav-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  header nav .nav-links li {
+    padding: 0% 5%;
+  }
+  header nav .nav-links li a p {
+    font-size: 1.5em;
+  }
   /* R2 (Text) Component 2 */
   #home-banner-heading1 {
     font-size: 2em;
@@ -647,6 +664,23 @@ footer p {
 }
 
 @media screen and (min-width: 1024px) {
+  header img {
+    max-width: 10%;
+  }
+  header nav .nav-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  header nav .nav-links li {
+    padding: 0% 5%;
+  }
+  header nav .nav-links li a p {
+    font-size: 2em;
+  }
   #home-banner-heading1 {
     font-size: 2.8em;
   }

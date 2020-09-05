@@ -219,7 +219,7 @@ nav {
   background-image: linear-gradient(#000000, #000000, #215A71);
 }
 
-.project-items-container .projects-project-image-container {
+.project-items-container .project-img_text-container .projects-project-image-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -232,12 +232,12 @@ nav {
           align-items: center;
 }
 
-.project-items-container .projects-project-image-container img {
+.project-items-container .project-img_text-container .projects-project-image-container img {
   max-width: 90vw;
   padding-top: 12px;
 }
 
-.project-items-container .project-content {
+.project-items-container .project-img_text-container .project-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -248,9 +248,10 @@ nav {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  padding-bottom: 7%;
 }
 
-.project-items-container .project-content p, .project-items-container .project-content a {
+.project-items-container .project-img_text-container .project-content p, .project-items-container .project-img_text-container .project-content a {
   margin: 0% 5%;
   padding-top: 12px;
 }
@@ -672,6 +673,46 @@ footer p {
   }
   .projects #projects-drumming {
     padding-top: 12px;
+  }
+  .project-items-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: wrap column;
+            flex-flow: wrap column;
+  }
+  .project-items-container .project-img_text-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: wrap row;
+            flex-flow: wrap row;
+    margin-bottom: 36px;
+  }
+  .project-items-container .project-img_text-container .projects-project-image-container {
+    padding-left: 5%;
+    width: 45%;
+  }
+  .project-items-container .project-img_text-container .projects-project-image-container img {
+    width: 100%;
+  }
+  .project-items-container .project-img_text-container .project-content {
+    padding: 0% 5%;
+    width: 55%;
+  }
+  .project-items-container .project-img_text-container .project-content p, .project-items-container .project-img_text-container .project-content a {
+    margin: 0%;
+  }
+  .project-items-container .project-page-shortcut #other-project-image-link {
+    max-width: 25vw;
+  }
+  .project-items-container .project-page-shortcut #other-project-image-link img {
+    max-width: 100%;
+    max-height: 100%;
   }
   .blog-tiles .blog-left {
     display: -webkit-box;

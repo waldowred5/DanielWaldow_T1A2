@@ -163,7 +163,7 @@ nav {
         display: flex;
         justify-content: flex-end;
         hr {
-            width: 80%;
+            width: 100%;
             margin: 5px 5% 36px;
             border: 1px solid $bright-green;
         } 
@@ -266,23 +266,25 @@ nav {
                 padding: 5px 0px;
             }
         }
-        .pages-blog-date-right {
-            @include flex-nomargin-top-bottom-padding();
-            flex-direction: column;
-            align-self: flex-end;
-            .date {
-                color: $dark-green;
+        div {
+            .pages-blog-date-right {
+                @include flex-nomargin-top-bottom-padding();
+                flex-direction: column;
+                align-self: flex-end;
+                .date {
+                    color: $dark-green;
+                }
+                
             }
-            
+            .pages-blog-date-left {
+                @include flex-nomargin-top-bottom-padding();
+                flex-direction: column;
+                align-self: flex-start;
+                .date {
+                    color: $dark-green;
+                }
+            } 
         }
-        .pages-blog-date-left {
-            @include flex-nomargin-top-bottom-padding();
-            flex-direction: column;
-            align-self: flex-start;
-            .date {
-                color: $dark-green;
-            }
-        } 
     }
     .blog-left {
         margin: 0%;
@@ -504,9 +506,6 @@ footer {
 
     //Projects Mainpage Body
     .projects {
-        display: flex;
-        flex-flow: wrap row;
-        justify-content: space-evenly;
         div {
             max-width: 40vw;
             a {
@@ -521,13 +520,29 @@ footer {
     }
 
     //Blog Mainpage Tile
-        .pages-blog-image {
-        /* max-width: 70%; */
-        a {
-            width: 70%;
-            img {
-                /* width: 70%; */
+    .blog-tiles {
+        .blog-left {
+            display: flex;
+            flex-flow: wrap row;
+            justify-content: space-between;
+            .main-blog-title_img {
+                display: flex;
+                width: 55%;
+                .pages-blog-image {
+                    a {
+                        width: 100%;
+                        img {
+                        width: 100%;
+                        }
+                    }
+                }
             }
+            .main-blog-date_text_read-more {
+                display: flex;
+                flex-flow: wrap column;
+                width: 45%;
+                padding-left: 0px;
+            }    
         }
-    } 
-}
+    }  
+}   

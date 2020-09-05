@@ -245,7 +245,6 @@ nav {
         .pages-blog-title {
             @include flex-nomargin-top-bottom-padding();
             max-width: 90vw;
-            padding-top: 36px;
         }
         .blog-non-title-container {
             .pages-blog-image {
@@ -295,7 +294,7 @@ nav {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        padding: 0% 5%;
+        padding: 0% 5% 6% 5%;
         .pages-blog-title {
             a {
                 align-self: flex-start;
@@ -308,9 +307,6 @@ nav {
                 }
                 a {
                     align-self: flex-start;
-                    p {
-                        text-align: left;
-                    }
                 }
             }
         }
@@ -320,7 +316,7 @@ nav {
         display: flex;
         flex-direction: column;
         align-items: flex-end;
-        padding: 0% 5%;
+        padding: 0% 5% 6% 5%;
         .pages-blog-title {
             a {
                 align-self: flex-end;
@@ -333,9 +329,6 @@ nav {
                 }
                 a {
                     align-self: flex-end;
-                    p {
-                        text-align: right;
-                    }
                 }
             }
         }
@@ -527,18 +520,20 @@ footer {
         }
     }
 
-    //Blog Mainpage Tile
-    .blog-tiles {
-        .blog-left {
+    @mixin blog-tile-format-desktop {
+        display: flex;
+        flex-flow: wrap column;
+        justify-content: space-between;
+        .pages-blog-title {
+            align-self: flex-start;
+        }
+        .blog-non-title-container {
             display: flex;
-            flex-flow: wrap row;
-            justify-content: space-between;
-            .pages-blog-title {
-                align-self: flex-start;
-            }
+            flex-direction: row;
             .pages-blog-image {
                 align-self: flex-end;
-                width: 55%;
+                width: 85%;
+                padding-right: 5%;
                 a {
                     width: 100%;
                     img {
@@ -546,12 +541,35 @@ footer {
                     }
                 }
             }
+            .main-blog-date_text_read-more {
+                display: flex;
+                flex-flow: wrap column;
+                width: 35%;
+                padding-left: 0px;
+                align-self: center;
+            }
         }
-        .main-blog-date_text_read-more {
-            display: flex;
-            flex-flow: wrap column;
-            width: 45%;
-            padding-left: 0px;
-        }    
+    }
+    //Blog Mainpage Tile
+    .blog-tiles {
+        .blog-left {
+            @include blog-tile-format-desktop();
+        }
+        .blog-right {
+            @include blog-tile-format-desktop();
+            .pages-blog-title {
+                align-self: flex-end;
+            }
+            .blog-non-title-container {
+                .pages-blog-image {
+                    order: 2;
+                    padding-right: 0%;
+                    padding-left: 5%;
+                }
+                .main-blog-date_text_read-more {
+                    order: 1;
+                }
+            }
+        }
     }  
 }   

@@ -125,6 +125,7 @@ nav {
     max-width: 100vw;
 }
 
+/* R2 (Text) Component 1 */
 .nav-links {
     list-style: none;
     display: flex;
@@ -173,6 +174,7 @@ nav {
         display: flex;
         flex-flow: wrap column;
         align-items: center;
+        /* R3 (Graphic) Component 1 */
         img {
             @include img-mobile-view();
         }
@@ -212,6 +214,7 @@ nav {
         align-items: flex-start;
         a {
             img {
+                /* R3 (Graphic) Component 2 */
                 @include img-mobile-view();
             }
         }
@@ -277,6 +280,7 @@ nav {
     align-items: center;
     div {
         .pages-blog-title {
+            /* R2 (Text) Component 3 */
             @include flex-nomargin-top-bottom-padding();
             max-width: 90vw;
         }
@@ -285,6 +289,7 @@ nav {
                 @include flex-nomargin-top-bottom-padding();
                 a {
                     img {
+                        /* R3 (Graphic) Component 3 */
                         @include img-mobile-view()        
                     }
                 }
@@ -294,6 +299,7 @@ nav {
                     @include flex-nomargin-top-bottom-padding();
                     flex-direction: column;
                     align-self: flex-end;
+                    /* R2 (Text) Component 4 */
                     .date {
                         color: $dark-green;
                         text-align: right;
@@ -418,6 +424,7 @@ nav {
         align-self: center;        
         padding-bottom: 36px;
         img {
+            /* R3 (Graphic) Component 4 */
             @include img-mobile-view();
         }
     }
@@ -493,6 +500,7 @@ footer {
 //Media Queries
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     //Homepage Banner Headings
+    /* R2 (Text) Component 2 */
     #home-banner-heading1 {
         font-size: 2em;
     }

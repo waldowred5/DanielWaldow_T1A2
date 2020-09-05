@@ -75,6 +75,7 @@ nav {
   max-width: 100vw;
 }
 
+/* R2 (Text) Component 1 */
 .nav-links {
   list-style: none;
   display: -webkit-box;
@@ -143,6 +144,7 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  /* R3 (Graphic) Component 1 */
 }
 
 .home-image-nav .home-image-nav-tile img {
@@ -202,6 +204,7 @@ nav {
 }
 
 .projects div a img {
+  /* R3 (Graphic) Component 2 */
   max-width: 90vw;
   padding-top: 12px;
 }
@@ -302,6 +305,7 @@ nav {
 }
 
 .blog-tiles div .pages-blog-title {
+  /* R2 (Text) Component 3 */
   margin: 0%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -319,6 +323,7 @@ nav {
 }
 
 .blog-tiles div .blog-non-title-container .pages-blog-image a img {
+  /* R3 (Graphic) Component 3 */
   max-width: 90vw;
   padding-top: 12px;
 }
@@ -335,6 +340,7 @@ nav {
           flex-direction: column;
   -ms-flex-item-align: end;
       align-self: flex-end;
+  /* R2 (Text) Component 4 */
 }
 
 .blog-tiles div .blog-non-title-container .main-blog-date_text_read-more .pages-blog-date-right .date {
@@ -523,6 +529,7 @@ nav {
 }
 
 .contact-content #contact-headshot img {
+  /* R3 (Graphic) Component 4 */
   max-width: 90vw;
   padding-top: 12px;
 }
@@ -627,6 +634,7 @@ footer p {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+  /* R2 (Text) Component 2 */
   #home-banner-heading1 {
     font-size: 2em;
   }

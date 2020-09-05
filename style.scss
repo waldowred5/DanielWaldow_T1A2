@@ -541,8 +541,14 @@ footer {
 
     //Projects Mainpage Body
     .projects {
+        display: flex;
+        flex-flow: wrap row;
+        justify-content: space-around;
         div {
             max-width: 40vw;
+            .project-title {
+                align-self: center;
+            }
             a {
                 img {
                     max-width: 40vw;
@@ -580,10 +586,14 @@ footer {
         .project-page-shortcut {
             #other-project-image-link {
                 max-width: 25vw;
-                img {
-                    max-width: 100%;
-                    max-height: 100%;
-                }
+                a {
+                    border: 0px;
+                    padding: 0px;
+                    img {
+                        max-width: 100%;
+                        /* max-height: 100%; */
+                    }
+                }   
             }
         }
     }

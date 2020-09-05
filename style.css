@@ -665,8 +665,24 @@ footer p {
   #hr-container-main-heading hr {
     max-width: 25%;
   }
+  .projects {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: wrap row;
+            flex-flow: wrap row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
   .projects div {
     max-width: 40vw;
+  }
+  .projects div .project-title {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
   }
   .projects div a img {
     max-width: 40vw;
@@ -710,9 +726,13 @@ footer p {
   .project-items-container .project-page-shortcut #other-project-image-link {
     max-width: 25vw;
   }
-  .project-items-container .project-page-shortcut #other-project-image-link img {
+  .project-items-container .project-page-shortcut #other-project-image-link a {
+    border: 0px;
+    padding: 0px;
+  }
+  .project-items-container .project-page-shortcut #other-project-image-link a img {
     max-width: 100%;
-    max-height: 100%;
+    /* max-height: 100%; */
   }
   .blog-tiles .blog-left {
     display: -webkit-box;

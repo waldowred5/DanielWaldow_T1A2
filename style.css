@@ -847,6 +847,12 @@ footer p {
         -ms-flex-order: 1;
             order: 1;
   }
+  .blog-post-image {
+    width: 90vw;
+  }
+  .blog-post-image img {
+    width: 100%;
+  }
   .contact-content {
     display: -webkit-box;
     display: -ms-flexbox;

@@ -618,6 +618,14 @@ footer {
             }
         }
     } 
+
+    //Blog Post Pages
+    .blog-post-image {
+        width: 90vw;
+        img {
+            width: 100%;
+        }
+    }
     
     //Contact Main Page
     .contact-content {

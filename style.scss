@@ -30,6 +30,37 @@ $dark-green: #6AB59C;
     padding: 5px 0px;
 }
 
+@mixin blog-tile-format-desktop {
+    display: flex;
+    flex-flow: wrap column;
+    justify-content: space-between;
+    .pages-blog-title {
+        align-self: flex-start;
+    }
+    .blog-non-title-container {
+        display: flex;
+        flex-direction: row;
+        .pages-blog-image {
+            align-self: flex-end;
+            width: 85%;
+            padding-right: 5%;
+            a {
+                width: 100%;
+                img {
+                width: 100%;
+                }
+            }
+        }
+        .main-blog-date_text_read-more {
+            display: flex;
+            flex-flow: wrap column;
+            width: 35%;
+            padding-left: 0px;
+            align-self: center;
+        }
+    }
+}
+
 //Global
 * {
     box-sizing: border-box;
@@ -520,36 +551,6 @@ footer {
         }
     }
 
-    @mixin blog-tile-format-desktop {
-        display: flex;
-        flex-flow: wrap column;
-        justify-content: space-between;
-        .pages-blog-title {
-            align-self: flex-start;
-        }
-        .blog-non-title-container {
-            display: flex;
-            flex-direction: row;
-            .pages-blog-image {
-                align-self: flex-end;
-                width: 85%;
-                padding-right: 5%;
-                a {
-                    width: 100%;
-                    img {
-                    width: 100%;
-                    }
-                }
-            }
-            .main-blog-date_text_read-more {
-                display: flex;
-                flex-flow: wrap column;
-                width: 35%;
-                padding-left: 0px;
-                align-self: center;
-            }
-        }
-    }
     //Blog Mainpage Tile
     .blog-tiles {
         .blog-left {
@@ -571,5 +572,27 @@ footer {
                 }
             }
         }
-    }  
+    } 
+    
+    //Contact Main Page
+    .contact-content {
+        display: flex;
+        flex-flow: wrap row;
+        #contact-headshot {
+            align-self: flex-start;
+            padding-right: 5%;
+            padding-bottom: 0%;
+            width: 45%;
+            img {
+                padding-top: 0px;
+                width: 100%;
+            }
+        }
+        .about-me-info-container {
+            align-self: center;
+            display: flex;
+            flex-flow: wrap column;
+            width: 55%;
+        }
+    }
 }   

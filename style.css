@@ -789,5 +789,37 @@ footer p {
         -ms-flex-order: 1;
             order: 1;
   }
+  .contact-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: wrap row;
+            flex-flow: wrap row;
+  }
+  .contact-content #contact-headshot {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    padding-right: 5%;
+    padding-bottom: 0%;
+    width: 45%;
+  }
+  .contact-content #contact-headshot img {
+    padding-top: 0px;
+    width: 100%;
+  }
+  .contact-content .about-me-info-container {
+    -ms-flex-item-align: center;
+        align-self: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: wrap column;
+            flex-flow: wrap column;
+    width: 55%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

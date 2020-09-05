@@ -724,15 +724,12 @@ footer p {
     margin: 0%;
   }
   .project-items-container .project-page-shortcut #other-project-image-link {
-    max-width: 25vw;
-  }
-  .project-items-container .project-page-shortcut #other-project-image-link a {
-    border: 0px;
-    padding: 0px;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    width: 25vw;
   }
   .project-items-container .project-page-shortcut #other-project-image-link a img {
-    max-width: 100%;
-    /* max-height: 100%; */
+    width: 100%;
   }
   .blog-tiles .blog-left {
     display: -webkit-box;
